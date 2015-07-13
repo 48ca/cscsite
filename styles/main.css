@@ -1,4 +1,5 @@
 html, body {
+	font-family:ubuntu, sans-serif, serif
 	background-color:white;
 }
 nav.csc-nav {
@@ -7,8 +8,10 @@ nav.csc-nav {
 	border-radius: 0 !important;
 	margin-bottom:0;	/* Force-override bootstrap margin (Why is it even there?) */
 }
+
+/* Transition div styles */
 .trans {
-	position:absolute;
+	position:relative;
 	background-color:red;
 	width:200px;
 	-webkit-transition-duration:1s;
@@ -24,11 +27,38 @@ nav.csc-nav {
 #testleft:hover {
 	margin-left:160px;
 }
+
+/* Remove test-right
 #testright {
+	overflow:hidden;
+	position:absolute;
 	right:-160px;
 	margin-right:0;
 	transition-property: margin-right;
 }
 #testright:hover {
 	margin-right:160px;
+}
+*/
+
+
+/* Top/Jumbotron styles */
+
+.top {
+	position:aboslute;
+	text-align:center;
+	color:white;
+	text-shadow:1px 1px black;
+	font-size:80px;
+	margin-bottom:0;	/* Force-override bootstrap margin (Why is it even there?) */
+}
+
+
+/* Officer styles */
+.officers {
+	background-color:red;
+}
+.officers .officer {
+	color:white;
+	background-color:blue;
 }
