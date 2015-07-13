@@ -1,5 +1,34 @@
 html, body {
 	background-color:white;
 }
-header.csc-nav {
+nav.csc-nav {
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+	margin-bottom:0;	/* Force-override bootstrap margin (Why is it even there?) */
+}
+.trans {
+	position:absolute;
+	background-color:red;
+	width:200px;
+	-webkit-transition-duration:1s;
+	-moz-transition-duration:1s;
+	-o-transition-duration:1s;
+	transition-duration:1s;
+}
+#testleft {
+	left:-160px;
+	transition-property: margin-left;
+	margin-left:0;
+}
+#testleft:hover {
+	margin-left:160px;
+}
+#testright {
+	right:-160px;
+	margin-right:0;
+	transition-property: margin-right;
+}
+#testright:hover {
+	margin-right:160px;
 }
