@@ -12,14 +12,16 @@ nav.csc-nav {
 /* Transition div styles */
 .trans {
 	position:relative;
-	background-color:red;
+	background-color:orange;
 	width:200px;
+	height:20px;
 	-webkit-transition-duration:1s;
 	-moz-transition-duration:1s;
 	-o-transition-duration:1s;
 	transition-duration:1s;
 }
 #testleft {
+	display:block;
 	left:-160px;
 	transition-property: margin-left;
 	margin-left:0;
@@ -27,9 +29,8 @@ nav.csc-nav {
 #testleft:hover {
 	margin-left:160px;
 }
-
-/* Remove test-right
 #testright {
+	display:inline;
 	overflow:hidden;
 	position:absolute;
 	right:-160px;
@@ -39,12 +40,13 @@ nav.csc-nav {
 #testright:hover {
 	margin-right:160px;
 }
-*/
 
 
 /* Top/Jumbotron styles */
 
 .top {
+	background-image:url('../images/top.jpg');
+	background-size:cover;
 	position:aboslute;
 	text-align:center;
 	color:white;
@@ -60,5 +62,7 @@ nav.csc-nav {
 }
 .officers .officer {
 	color:white;
+	height:150px;
+	border:5px solid black;
 	background-color:blue;
 }
